@@ -1,0 +1,43 @@
+{
+  "name": "docpage",
+  "version": "1.0.0",
+  "description": "Quickly create a documentation site from a single markdown file",
+  "main": "index.js",
+  "bin": {
+    "docpage": "bin/index.js"
+  },
+  "scripts": {
+    "bundle-css": "csskit bundle lib/deps.css > lib/bundle.css",
+    "test": "tape tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethvincent/docpage.git"
+  },
+  "keywords": [
+    "documentation",
+    "docs",
+    "static-sites"
+  ],
+  "author": "sethvincent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethvincent/docpage/issues"
+  },
+  "homepage": "https://github.com/sethvincent/docpage#readme",
+  "dependencies": {
+    "bel": "^4.5.0",
+    "chokidar": "^1.6.1",
+    "create-html": "^1.1.0",
+    "csskit-base": "^1.0.0",
+    "gray-matter": "^2.1.0",
+    "highlight.js": "^9.8.0",
+    "markdown-toc": "^0.13.0",
+    "marked": "^0.3.6",
+    "nets": "^3.2.0",
+    "prompt": "^1.0.0",
+    "subcommand": "^2.0.4",
+    "township-client": "github:township/township-client",
+    "uslug": "^1.0.4"
+  }
+}
