@@ -26,7 +26,6 @@ module.exports = function docpage (opts) {
     assert.equal(typeof callback, 'function', 'callback function is required')
 
     parse(filepath, options, callback)
-
     if (options.watch) {
       var watch = createWatcher(filepath)
 

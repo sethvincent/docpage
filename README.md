@@ -38,7 +38,7 @@ npm install -g docpage
 ### Build the index.html file from a markdown file:
 
 ```sh
-docpage build example.md > site/index.html
+docpage build example.md -o site/index.html
 ```
 
 ### Publish a markdown file to docpage.org
@@ -51,7 +51,7 @@ docpage publish example.md example-docpage-site
 ### Watch a markdown file for changes and serve through a development server
 
 ```sh
-docpage start example.md
+docpage start example.md -w
 ```
 
 ### Full command-line help text
@@ -61,18 +61,26 @@ USAGE:
   docpage {command} [options]
 
 COMMANDS:
-  publish,   publish a page
-  build,     build page,
-  start,     serve a page locally
-  register,  create an account on docpage.org
-  login,     log in to docpage.org
-  help,      show this help message
+  publish     publish a page
+  build       build page,
+  start       serve a page locally
+  register    create an account on docpage.org
+  login       log in to docpage.org
+  help        show this help message
 
 BUILD
   docpage build file.md
 
+  Options:
+  -o, --output   the filepath of the html file you want to create
+  -w, --watch    watch the markdown file for changes and rebuild
+
 START
   docpage start file.md
+
+  Options:
+  -o, --output   the filepath of the html file you want to create
+  -w, --watch    watch the markdown file for changes and rebuild
 
 PUBLISH
   docpage publish file.md name-of-project

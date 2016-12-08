@@ -2,7 +2,7 @@ var prompt = require('prompt')
 
 module.exports = {
   name: 'register',
-  command: function (args) {
+  command: function register (args) {
     var ship = require('../township')
 
     var opts = [

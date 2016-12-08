@@ -2,7 +2,7 @@ var path = require('path')
 
 module.exports = {
   name: 'publish',
-  command: function (args) {
+  command: function publish (args) {
     var input = path.join(process.cwd(), args._[0])
     var slug = args._[1]
 

@@ -1,32 +1,40 @@
 var usage = `
-  USAGE:
-    docpage {command} [options]
+USAGE:
+  docpage {command} [options]
 
-  COMMANDS:
-    publish,   publish a page
-    build,     build page,
-    start,     serve a page locally
-    register,  create an account on docpage.org
-    login,     log in to docpage.org
-    help,      show this help message
+COMMANDS:
+  publish     publish a page
+  build       build page,
+  start       serve a page locally
+  register    create an account on docpage.org
+  login       log in to docpage.org
+  help        show this help message
 
-  BUILD
-    docpage build file.md
+BUILD
+  docpage build file.md
 
-  START
-    docpage start file.md
+  Options:
+  -o, --output   the filepath of the html file you want to create
+  -w, --watch    watch the markdown file for changes and rebuild
 
-  PUBLISH
-    docpage publish file.md name-of-project
+START
+  docpage start file.md
 
-  LOGIN
-    docpage login
+  Options:
+  -o, --output   the filepath of the html file you want to create
+  -w, --watch    watch the markdown file for changes and rebuild
 
-  REGISTER
-    docpage register
+PUBLISH
+  docpage publish file.md name-of-project
 
-  HELP
-    docpage help
+LOGIN
+  docpage login
+
+REGISTER
+  docpage register
+
+HELP
+  docpage help
 
 `
 
