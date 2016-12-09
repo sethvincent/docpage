@@ -27,6 +27,20 @@ module.exports = {
       boolean: false,
       default: '',
       help: 'watch the markdown file for changes and rebuild'
+    },
+    {
+      name: 'code',
+      abbr: 'c',
+      boolean: false,
+      default: '',
+      help: 'Link to code repository'
+    },
+    {
+      name: 'main-website',
+      abbr: 'm',
+      boolean: false,
+      default: '',
+      help: 'Link to website'
     }
   ]
 }

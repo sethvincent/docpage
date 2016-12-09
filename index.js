@@ -5,6 +5,7 @@ var fs = require('fs')
 
 var request = require('nets')
 var tmpdir = require('os-tmpdir')
+var xtend = require('xtend')
 
 var parseMarkdown = require('./lib/parse-markdown')
 var createHTML = require('./lib/create-html')
@@ -37,7 +38,8 @@ module.exports = function docpage (opts) {
     function parse (filepath, options, callback) {
       parseMarkdown(filepath, options, function (err, md) {
         if (err) return callback(err)
-
+        md = xtend(md, options)
+        console.log(md.description)
         var file = createHTML(md)
         if (!options.output) return callback(null, file)
 
@@ -79,7 +81,7 @@ module.exports = function docpage (opts) {
 
   function start (filepath, options, callback) {
     options.output = options.output || path.join(tmpdir(), 'index.html')
-
+    console.log('options', options)
     var server = http.createServer(function (req, res) {
       res.setHeader('Content-Type', 'text/html')
       fs.createReadStream(options.output).pipe(res)

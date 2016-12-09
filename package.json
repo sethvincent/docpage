@@ -39,6 +39,7 @@
     "prompt": "^1.0.0",
     "subcommand": "^2.0.4",
     "township-client": "github:township/township-client",
-    "uslug": "^1.0.4"
+    "uslug": "^1.0.4",
+    "xtend": "^4.0.1"
   }
 }

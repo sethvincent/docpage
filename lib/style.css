@@ -2,6 +2,7 @@ pre {
   background-color: #fafafa;
   padding: 20px;
   font-size: 0.9em;
+  overflow-x: auto;
 }
 
 p code {
@@ -17,6 +18,13 @@ p code {
   background-color: #fafafa;
   z-index: 10;
   margin-left: 220px;
+}
+
+.site-header-link {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 0.7em;
+  text-transform: uppercase;
 }
 
 .site-title {

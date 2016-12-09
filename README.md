@@ -1,4 +1,4 @@
-# docpage
+# 📄 docpage
 
 Quickly publish documentation sites from a single markdown file.
 
@@ -72,15 +72,19 @@ BUILD
   docpage build file.md
 
   Options:
-  -o, --output   the filepath of the html file you want to create
-  -w, --watch    watch the markdown file for changes and rebuild
+  -o, --output          the filepath of the html file you want to create
+  -w, --watch           watch the markdown file for changes and rebuild
+  -c, --code            link to code repository
+  -m, --main-website    link to main website for project
 
 START
   docpage start file.md
 
   Options:
-  -o, --output   the filepath of the html file you want to create
-  -w, --watch    watch the markdown file for changes and rebuild
+  -o, --output          the filepath of the html file you want to create
+  -w, --watch           watch the markdown file for changes and rebuild
+  -c, --code            link to code repository
+  -m, --main-website    link to main website for project
 
 PUBLISH
   docpage publish file.md name-of-project

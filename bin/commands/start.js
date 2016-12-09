@@ -26,6 +26,27 @@ module.exports = {
       boolean: false,
       default: '',
       help: 'watch the markdown file for changes and rebuild'
+    },
+    {
+      name: 'description',
+      abbr: 'd',
+      boolean: false,
+      default: '',
+      help: 'description of the site'
+    },
+    {
+      name: 'code',
+      abbr: 'c',
+      boolean: false,
+      default: '',
+      help: 'Link to code repository'
+    },
+    {
+      name: 'main-website',
+      abbr: 'm',
+      boolean: false,
+      default: '',
+      help: 'Link to website'
     }
   ]
 }
