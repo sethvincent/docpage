@@ -38,9 +38,10 @@ module.exports = function docpage (opts) {
     function parse (filepath, options, callback) {
       parseMarkdown(filepath, options, function (err, md) {
         if (err) return callback(err)
+
         md = xtend(md, options)
-        console.log(md.description)
         var file = createHTML(md)
+
         if (!options.output) return callback(null, file)
 
         fs.writeFile(options.output, file, function (err) {
@@ -81,7 +82,7 @@ module.exports = function docpage (opts) {
 
   function start (filepath, options, callback) {
     options.output = options.output || path.join(tmpdir(), 'index.html')
-    console.log('options', options)
+
     var server = http.createServer(function (req, res) {
       res.setHeader('Content-Type', 'text/html')
       fs.createReadStream(options.output).pipe(res)
