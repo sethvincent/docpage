@@ -13,6 +13,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Added
 * add --code and --main-website options for creating links in header
 
+### Fixed
+* fix overflow in `pre` code blocks
+
 ## v1.0.2
 
 ### Fixed
