@@ -29,8 +29,10 @@ module.exports = function docpage (opts) {
     parse(filepath, options, callback)
     if (options.watch) {
       var watch = createWatcher(filepath)
+      console.log('watching for file changes:', filepath)
 
       watch.on('change', function (path) {
+        console.log('file change:', filepath)
         parse(path, options, callback)
       })
     }
@@ -89,6 +91,7 @@ module.exports = function docpage (opts) {
     })
 
     server.listen(options.port || 5588, function () {
+      console.log('server listening on http://127.0.0.1:5588')
       process.on('SIGINT', function () {
         server.close()
         process.exit()

@@ -23,6 +23,7 @@ With `docpage` a single markdown file becomes:
 - a single html file with:
   - simple, readable styles
   - a sidebar with table of contents
+  - links in the header to git repo and main project website
 - an instant documentation site on [docpage.org](https://docpage.org) *(optional)*
 
 ## Install
@@ -38,7 +39,37 @@ npm install -g docpage
 ### Build the index.html file from a markdown file:
 
 ```sh
-docpage build example.md -o site/index.html
+docpage build example.md > site/index.html
+```
+
+### Watch for changes and rebuild:
+
+```sh
+docpage build example.md > site/index.html --watch
+```
+
+### Put project description in header
+
+```sh
+docpage build example.md > site/index.html --description "simple docs site from a markdown file"
+```
+
+### Put git repo and main website links in header
+
+```sh
+docpage build example.md > site/index.html --code https://github.com/sethvincent/docpage --main-website http://sethvincent.com
+```
+
+### Start a development server
+
+```sh
+docpage start example.md
+```
+
+### Watch for change and rebuild
+
+```sh
+docpage start example.md --watch
 ```
 
 ### Publish a markdown file to docpage.org
@@ -46,12 +77,6 @@ docpage build example.md -o site/index.html
 ```sh
 docpage register
 docpage publish example.md example-docpage-site
-```
-
-### Watch a markdown file for changes and serve through a development server
-
-```sh
-docpage start example.md -w
 ```
 
 ### Full command-line help text

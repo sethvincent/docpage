@@ -9,7 +9,6 @@ module.exports = {
 
     docpage.start(input, args, function (err, file) {
       if (err) return console.log(err)
-      console.log('server listening on http://127.0.0.1:5588')
     })
   },
   options: [

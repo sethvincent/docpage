@@ -8,6 +8,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 * ???
 
+## v1.1.1
+
+### Added
+* better blockquote style
+* print messages for `serve` cmd and `--watch` option
+
+### Fixed
+* description option in build cmd
+
 ## v1.1.0
 
 ### Added

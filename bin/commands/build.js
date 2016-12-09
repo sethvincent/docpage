@@ -29,6 +29,13 @@ module.exports = {
       help: 'watch the markdown file for changes and rebuild'
     },
     {
+      name: 'description',
+      abbr: 'd',
+      boolean: false,
+      default: '',
+      help: 'description of the site'
+    },
+    {
       name: 'code',
       abbr: 'c',
       boolean: false,
