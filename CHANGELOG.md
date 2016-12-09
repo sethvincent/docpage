@@ -8,6 +8,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 * ???
 
+## v1.1.0
+
+### Added
+* add --code and --main-website options for creating links in header
+
+## v1.0.2
+
+### Fixed
+* pass watch option to build cmd, improve help text
+
+## v1.0.1
+
+### Fixed
+* add os-tmpdir dep
+
 ## v1.0.0
 
 ### Added
