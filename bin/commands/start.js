@@ -22,7 +22,7 @@ module.exports = {
     {
       name: 'watch',
       abbr: 'w',
-      boolean: false,
+      boolean: true,
       default: '',
       help: 'watch the markdown file for changes and rebuild'
     },
